@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        fieldset {
+            border: 2px solid black;
+            width: fit-content;
+            padding: 15px;
+            text-align: center;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 5px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            min-width: 80px;
+            text-align: center;
+        }
+        select, textarea {
+            vertical-align: top;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>form</h2>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Registration</legend>
+
+            <div class="form-group">
+                <label for="fname">fname :</label>
+                <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="form-group">
+                <label for="lname">lname :</label>
+                <input type="text" id="lname" name="lname">
+            </div>
+
+            <div class="form-group">
+                <label for="email">email :</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="skills">Skills :</label>
+                <select id="skills" name="skills[]" multiple size="3">
+                    <option value="web_dev">web dev</option>
+                    <option value="app_dev">App Dev</option>
+                    <option value="game_dev">Game Dev</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address :</label>
+                <textarea id="address" name="address" rows="3" cols="25"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password">
+            </div>
+
+            <div class="form-group">
+                <label>Fav color :</label><br>
+                <input type="radio" id="red" name="fav_color" value="red">
+                <label for="red">Red</label>
+                <input type="radio" id="blue" name="fav_color" value="blue">
+                <label for="blue">Blue</label><br>
+                <input type="radio" id="green" name="fav_color" value="green">
+                <label for="green">Green</label>
+                <input type="radio" id="yellow" name="fav_color" value="yellow">
+                <label for="yellow">Yellow</label>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone no. :</label>
+                <input type="number" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label>Fav food :</label><br>
+                <input type="checkbox" id="noodles" name="fav_food[]" value="noodles">
+                <label for="noodles">Noodles</label>
+                <input type="checkbox" id="paneer" name="fav_food[]" value="paneer">
+                <label for="paneer">Paneer</label>
+                <input type="checkbox" id="gobi" name="fav_food[]" value="gobi">
+                <label for="gobi">Gobi</label><br>
+                <input type="checkbox" id="panipuri" name="fav_food[]" value="panipuri">
+                <label for="panipuri">Pani Puri</label>
+                <input type="checkbox" id="shevpuri" name="fav_food[]" value="shevpuri">
+                <label for="shevpuri">Shev Puri</label>
+            </div>
+
+            <div style="text-align: center;">
+                <button type="submit">Submit</button>
+            </div>
+
+        </fieldset>
+    </form>
+
+</body>
+</html>
